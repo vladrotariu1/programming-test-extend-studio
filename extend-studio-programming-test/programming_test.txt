@@ -1,0 +1,46 @@
+------------------
+Task 1
+------------------
+
+
+Create an image slider with play/stop, back and next buttons starting from an image list similar to the one in the "slider/test.html" file
+
+The implementation should be done from scratch using JavaScript / jQuery without using any predefined slider component / script.
+
+Here is an example of a slider:
+https://www.jssor.com/demos/image-slider.slider
+
+Disregard the text effects and other animations in the example. You just have to create a simple slider with images changing with a left/right slide effect. 
+
+------------------
+Task 2
+------------------
+
+In a MySQL database we have a "menu" table that contains the items of a dynamic navigation menu.
+
+The table has the folowing fields:
+
+id - number
+parent_id - number - 0 for root
+title - string
+link - string
+
+Write a piece of PHP code that generates a structure of UL/LI elements for the menu structure from the table described above. The menu should work with unlimited levels of submenus.
+
+Example : 
+
+1 0 about about.html
+2 0 products products.html
+3 2 product 1 product1.html
+...
+
+<ul>
+	<li><a href="about.html"> about </a></li>
+	<li><a href="products.html"> products </a> 
+		<ul>
+			<li> <a href="product1.html"> product 1 </a></li>
+			...
+		</ul>
+	</li>
+	...
+</ul>
